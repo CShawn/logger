@@ -21,7 +21,7 @@ package com.cshawn.logger
  * Date: 2025/5/9
  */
 object LogUtil {
-    internal var debug: Boolean = true
+    internal var debug: Boolean = false
 
     fun setDebug(debug: Boolean) {
         this.debug = debug

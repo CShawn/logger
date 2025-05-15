@@ -1,0 +1,18 @@
+[versions]
+agp = "8.9.1"
+kotlin = "2.0.21"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+self4j = "2.0.7"
+logback = "3.0.0"
+
+[libraries]
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+self4j = { group = "org.slf4j", name = "slf4j-api", version.ref = "self4j" }
+logback = { group = "com.github.tony19", name = "logback-android", version.ref = "logback" }
+
+[plugins]
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+

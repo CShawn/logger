@@ -1,5 +1,6 @@
 <configuration>
-    <property name="LOG_DIR" value="${EXT_DIR:-${DATA_DIR}}/log"/>
+    <property name="DATA_PATH" value="/storage/emulated/0/Android/data/${PACKAGE_NAME}/files"/>
+    <property name="LOG_DIR" value="${DATA_PATH}/log"/>
     <appender name="logcat" class="ch.qos.logback.classic.android.LogcatAppender">
         <encoder>
             <pattern>[%thread] %msg</pattern>
